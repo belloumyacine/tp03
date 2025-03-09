@@ -1,0 +1,11 @@
+package com.example.imatah.presentation.viewmodel
+
+sealed class AddReportEvent {
+    data class TitleChanged(val title: String) : AddReportEvent()
+    data class DescriptionChanged(val description: String) : AddReportEvent()
+    data class CategorySelected(val category: String) : AddReportEvent()
+    data class CoordinatesChanged(val latitude: Double, val longitude: Double) : AddReportEvent()
+    data class ImageUrlChanged(val url: String) : AddReportEvent()
+    data class StatusChanged(val status: String) : AddReportEvent()
+    object Submit : AddReportEvent()
+}
