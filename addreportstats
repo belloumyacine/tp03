@@ -1,0 +1,13 @@
+package com.example.imatah.presentation.viewmodel
+
+data class AddReportState(
+    val title: String = "",
+    val description: String = "",
+    val category: String = "",
+    val coordinates: Pair<Double, Double> = Pair(0.0, 0.0),
+    val imageUrl: String = "",
+    val status: String = "New",
+    val isLoading: Boolean = false,
+    val error: String? = null,
+    val isSuccess: Boolean = false
+)
