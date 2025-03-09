@@ -1,4 +1,3 @@
-//presetatio
 package com.example.imatah.presentation
 
 import android.content.Intent
